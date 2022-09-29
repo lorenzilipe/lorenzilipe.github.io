@@ -2,6 +2,7 @@
 @import 'core/typography';
 @import 'pages/home';
 @import 'pages/projects';
+@import 'pages/contact';
 @import 'layout/header';
 @import 'layout/navigation';
 @import 'layout/footer';
@@ -13,6 +14,7 @@ body {
 }
 
 .main {
+    padding-top: 8em;
     width: $main-width;
     max-width: $main-max-width;
     display: block;
@@ -20,4 +22,8 @@ body {
     position: relative;
     margin: auto;
     margin-top: 0;
+
+    &__contact {
+        max-width: $main__contact-max-width;
+    }
 }

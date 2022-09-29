@@ -1,8 +1,23 @@
 .main {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
   font-weight: 300;
   color: black;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    font-size: 12px;
+  }
+  .main footer p {
+    font-size: 9.6px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main {
+    font-size: 16px;
+  }
+  .main footer p {
+    font-size: 12.8px;
+  }
 }
 .main .title {
   font-size: 2.5em;
@@ -34,13 +49,57 @@
   font-size: 1em;
   font-weight: lighter;
 }
-
-a {
+.main a {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
   font-weight: 300;
   color: black;
   text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .main a {
+    font-size: 12px;
+  }
+  .main a footer p {
+    font-size: 9.6px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main a {
+    font-size: 16px;
+  }
+  .main a footer p {
+    font-size: 12.8px;
+  }
+}
+
+.navbar a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: black;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .navbar a {
+    font-size: 12px;
+  }
+  .navbar a footer p {
+    font-size: 9.6px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar a {
+    font-size: 16px;
+  }
+  .navbar a footer p {
+    font-size: 12.8px;
+  }
+}
+
+a {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
 }
 
 .project__desc__tools span, .project__desc__skills span {
@@ -49,15 +108,42 @@ a {
 
 footer p {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
   font-weight: 300;
   color: black;
-  color: #414141;
-  font-size: 0.8em;
+  color: white;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  footer p {
+    font-size: 12px;
+  }
+  footer p footer p {
+    font-size: 9.6px;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer p {
+    font-size: 16px;
+  }
+  footer p footer p {
+    font-size: 12.8px;
+  }
 }
 
 .bold {
   font-weight: bolder;
+}
+
+.contact-card {
+  font-weight: bolder;
+}
+
+.item a:hover,
+.item a:hover::after,
+.contact-card a:hover,
+.contact-card a:hover::after {
+  color: #ccc;
+  transition: 0.3s ease color;
 }
 
 @media screen and (max-width: 768px) {
@@ -224,9 +310,18 @@ footer p {
   cursor: pointer;
 }
 
-header {
-  margin-top: 8em;
+.contact-card {
+  padding-top: 20vh;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  -moz-column-gap: 3em;
+       column-gap: 3em;
+  width: 100%;
 }
+
 header h1 {
   margin-bottom: 1rem;
 }
@@ -272,11 +367,6 @@ ul {
   padding: 10px;
 }
 
-.item a:hover,
-.item a:hover::after {
-  color: #ccc;
-}
-
 .menu.active .item {
   display: block;
 }
@@ -311,9 +401,6 @@ footer {
   align-items: center;
   justify-content: center;
 }
-footer p {
-  color: white;
-}
 
 article {
   width: 100%;
@@ -338,6 +425,7 @@ body {
 }
 
 .main {
+  padding-top: 8em;
   width: 93vw;
   max-width: 50em;
   display: block;
@@ -345,4 +433,7 @@ body {
   position: relative;
   margin: auto;
   margin-top: 0;
+}
+.main__contact {
+  max-width: 86em;
 }/*# sourceMappingURL=main.css.map */

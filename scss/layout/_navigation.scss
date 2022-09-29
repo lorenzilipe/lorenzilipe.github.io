@@ -41,11 +41,6 @@ ul {
     padding: 10px;
 }
 
-.item a:hover,
-.item a:hover::after {
-    color: #ccc;
-}
-
 .menu.active {
     .item {
         display: block;
