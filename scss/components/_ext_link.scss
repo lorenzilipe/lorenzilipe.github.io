@@ -1,0 +1,11 @@
+@use '../abstracts/variables';
+
+.ext_link {
+    background-image: url('../../img/icons8-external-link-120.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: 0.5em;
+}

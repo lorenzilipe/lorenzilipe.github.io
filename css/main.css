@@ -1,0 +1,348 @@
+.main {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+}
+.main .title {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+.main .title-bold {
+  font-weight: 700;
+}
+.main h2, .main h3 {
+  font-weight: lighter;
+}
+.main h2 {
+  font-size: 2em;
+}
+.main h3 {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+.main h3:before {
+  position: absolute;
+  left: 0;
+  margin-top: 1.4em;
+  height: 0;
+  width: 3em;
+  content: "";
+  border-bottom: 1.2px dotted black;
+}
+.main .h2a, .main .h3a {
+  font-size: 1em;
+  font-weight: lighter;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  text-decoration: none;
+}
+
+.project__desc__tools span, .project__desc__skills span {
+  font-weight: bolder;
+}
+
+footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  color: #414141;
+  font-size: 0.8em;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-pic {
+    position: relative;
+    margin: auto;
+    margin-bottom: 5em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .profile-pic {
+    float: right;
+  }
+}
+
+.profile-img {
+  border-radius: 2%;
+}
+@media screen and (max-width: 768px) {
+  .profile-img {
+    width: 93vw;
+    max-width: 50em;
+    margin: auto;
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .profile-img {
+    margin-left: 5em;
+    width: 30vw;
+    max-width: 15em;
+  }
+}
+
+.education {
+  margin-bottom: 3em;
+}
+.education__title p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.155em;
+  font-weight: 500;
+}
+.education__title p span.left {
+  text-align: left;
+}
+.education__title p span.right {
+  text-align: right;
+}
+.education__subtitle p {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  font-style: italic;
+}
+.education__subtitle p span.left {
+  text-align: left;
+}
+.education__subtitle p span.right {
+  text-align: right;
+}
+.education__desc p {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.155em;
+  padding-left: 0.809em;
+}
+.education__desc p span.left {
+  text-align: left;
+  width: 38.2%;
+}
+.education__desc p span.right {
+  text-align: right;
+  width: 61.8%;
+}
+
+.experience {
+  margin-bottom: 3em;
+}
+.experience__title p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.155em;
+  font-weight: 500;
+}
+.experience__title p span.left {
+  text-align: left;
+}
+.experience__title p span.right {
+  text-align: right;
+}
+.experience__subtitle p {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  font-style: italic;
+}
+.experience__subtitle p span.left {
+  text-align: left;
+}
+.experience__subtitle p span.right {
+  text-align: right;
+}
+.experience__desc p {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.155em;
+  padding-left: 0.809em;
+}
+.experience__desc p span.left {
+  text-align: left;
+  width: 38.2%;
+}
+.experience__desc p span.right {
+  text-align: right;
+  width: 61.8%;
+}
+.experience__title p {
+  margin-bottom: 0;
+  padding-bottom: 0.155em;
+}
+.experience__desc p {
+  margin: 0.155em;
+  padding-left: 1.809em;
+  text-indent: -1.809em;
+  display: list-item;
+  list-style-position: inside;
+}
+
+.minimized {
+  -webkit-mask-image: linear-gradient(to bottom, white 30%, transparent 100%);
+          mask-image: linear-gradient(to bottom, white 30%, transparent 100%);
+  overflow-y: hidden;
+  max-height: 10em;
+  transition: 2s ease;
+}
+
+.maximized {
+  max-height: 100em;
+  transition: 3s ease;
+}
+
+.project {
+  margin-bottom: 5em;
+}
+.project__desc__full {
+  text-indent: 2em;
+}
+.project button {
+  margin-top: 1em;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8em;
+  font-weight: 300;
+  color: black;
+  border: 1px darkgrey;
+  border-style: none none none solid;
+  background-color: white;
+  cursor: pointer;
+}
+
+header {
+  margin-top: 8em;
+}
+header h1 {
+  margin-bottom: 1rem;
+}
+
+nav {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 5;
+  border-bottom: 1px solid rgba(220, 220, 220, 0.97);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  list-style-type: none;
+  max-width: 50em;
+}
+
+.toggle {
+  padding-left: 90%;
+  order: 1;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+}
+
+.item {
+  order: 2;
+  width: 100%;
+  text-align: right;
+  display: none;
+  padding: 10px;
+}
+
+.item a:hover,
+.item a:hover::after {
+  color: #ccc;
+}
+
+.menu.active .item {
+  display: block;
+}
+
+/* Tablet navbar */
+@media all and (min-width: 768px) {
+  .menu {
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin: auto;
+    padding-left: 46.5vw;
+  }
+  .item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+    max-width: 15%;
+  }
+  .toggle {
+    display: none;
+  }
+}
+footer {
+  display: flex;
+  bottom: 0;
+  margin-top: 5em;
+  height: 3em;
+  width: 100%;
+  background-color: #414141;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  color: white;
+}
+
+article {
+  width: 100%;
+}
+
+.section {
+  margin-top: 5em;
+}
+
+.ext_link {
+  background-image: url("../../img/icons8-external-link-120.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: 0.5em;
+}
+
+body {
+  margin: 0;
+}
+
+.main {
+  width: 93vw;
+  max-width: 50em;
+  display: block;
+  min-height: 100vh;
+  position: relative;
+  margin: auto;
+  margin-top: 0;
+}/*# sourceMappingURL=main.css.map */

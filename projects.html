@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Felipe Lorenzi - Projects</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <ul class="menu">
+            <li class="item"><a href="./index.html">Home</a></li>
+            <li class="item"><a href="#">Projects</a></li>
+            <li class="item"><a href="./contact.html">Contact</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+
+    <!--Main page-->
+    <div class="main">
+        <header>
+            <h1 class="title">Projects</h1>
+        </header>
+        <article>
+            <div class="section">
+                <div class="project">
+                    <h3 class="project__title">
+                        <a href="" class="h3a">Web scraping used car listings for trend analysis</a>
+                        <a href="" class="ext_link"></a>
+                    </h3>
+                    <div class="project__desc minimized">
+                        <p class="project__desc__tools">
+                            <span>Tools: </span>
+                            python - beautifulsoup4, pandas, seaborn.
+                        </p>
+                        <p class="project__desc__skills">
+                            <span>Skills: </span>
+                            web scraping, data visualization
+                        </p>
+                        <p class="project__desc__full">
+                            Used car prices have gone through the roof with the 
+                            pandemic and the war in Ukraine, which has made
+                            getting a decent replacement for my recently-totaled 
+                            (by someone else) '06 Prius quite challenging.
+                        </p>
+                        <p class="project__desc__full">
+                            I've spent a lot of time in the last couple of months 
+                            on <a href="https://www.cars.com">Cars.com</a>
+                            looking for a deal that would neither break my bank
+                            nor have a high probability of becoming a headache in
+                            a year - to no avail. I did some research and it looks
+                            like prices might begin to decline sometime soon, although
+                            no one can tell for certain.
+                        </p>
+                        <p class="project__desc__full">
+                            So I asked myself: How long should I wait? Should I buy
+                            a car that recently got listed or should I wait a bit 
+                            before getting in touch, see if the price changes?
+                            Are certain models getting cheaper than others? To answer
+                            those questions I decided to build a Python script
+                            that runs every night while I'm asleep. It scrapes
+                            <a href="https://www.cars.com">Cars.com</a> for the
+                            filters I selected and adds the details of the
+                            cars it found onto a table in a csv file. From there,
+                            I can read the file in Jupyter Notebooks whenever I want
+                            and use Python to see what the prices of the cars I'm
+                            after are doing.
+                        </p>
+                        <p class="project__desc__full">
+                            I don't have much data yet, but I expect this tool to
+                            become more powerful as time goes by. So far I have 
+                            found that only around 10% of cars change price in a week,
+                            and cars with higher mileages tend to drop in price 
+                            faster than those with lower mileages.
+                        </p>
+                        <p class="project__desc__full">
+                            Want to see this project? Click on the title and it
+                            will send you to a Jupyter notebook showing my code 
+                            and what I have done with it so far.
+                        </p>
+                    </div>
+                    <button onclick="readMore(this)">Read more</button>
+                </div>
+                <div class="project">
+                    <h3 class="project__title">
+                        <a class="h3a">Building GUI in python for visualizing 'Magic: The Gathering' decks</a>
+                        <!--<a href="" class="ext_link"></a>-->
+                    </h3>
+                    <div class="project__desc minimized">
+                        <p class="project__desc__tools">
+                            <span>Tools: </span>
+                            python - pandas, seaborn, tkinter.
+                        </p>
+                        <p class="project__desc__skills">
+                            <span>Skills: </span>
+                            building GUIs, data visualization.
+                        </p>
+                        <p class="project__desc__full">
+                            For those who have never heard of it, 'Magic: The Gathering' (or MTG, for short) 
+                            is the most played collectible cards game in the world, which begins to 
+                            explains  why my cousin <span class="bold">loves</span> it.
+                        </p>
+                        <p class="project__desc__full">
+                            I mean, he spends hours a day looking through the twenty thousand unique cards
+                            on the market deciding which ones he will add to the next deck he's building. 
+                            That does, as one might expect, come with some challenges.
+                        </p>
+                        <p class="project__desc__full">
+                            Search tools are available to facilitate finding the right cards, but my cousin 
+                            was having trouble with balancing out his decks. You see, MTG cards have a 'cost' 
+                            that must be 'payed' by the player when they want to play it. If a deck only has 
+                            high cost cards, it won't work properly. But the same goes for a deck that only 
+                            has low cost cards. This is also true for other properties of the cards, such as 
+                            their color, type, etc. And given that the decks my cousin builds are composed 
+                            of 100 cards each, it becomes difficult to keep track.
+                        </p>
+                        <p class="project__desc__full">
+                            This is where I saw an opportunity to help him out. I thought that it shouldn't be 
+                            too hard write up a program that took in a list of cards in a deck and spit out a 
+                            few useful graphs and numbers. My cousin is not very comfortable with tech, so I knew 
+                            I would need a GUI. So I did some research and decided to use Tkinter, a Python package 
+                            for creating GUIs in Python. I hooked up the GUI to a few functions, and using Pandas 
+                            and Seaborn I was able to make it display graphs. My cousin has been using it, and
+                            while he has some suggestions for improvement, I think it's been a success!
+                        </p>
+                    </div>
+                    <button onclick="readMore(this)">Read more</button>
+                </div>
+                <div class="project">
+                    <h3 class="project__title">
+                        <a class="h3a">Features of music in the brain using EEG data</a>
+                        <!--<a href="" class="ext_link"></a>-->
+                    </h3>
+                    <div class="project__desc minimized">
+                        <p class="project__desc__tools">
+                            <span>Tools: </span>
+                            github; python - pandas, mne, librosa, scipy, seaborn.
+                        </p>
+                        <p class="project__desc__skills">
+                            <span>Skills: </span>
+                            analyzing EEG data, signal processing, group collaboration.
+                        </p>
+                        <p class="project__desc__full">
+                            One of the most interesting courses I've taken at UCSD - COGS 138: Neural 
+                            Data Science - was also one of the hardest to grasp. While I have quite a 
+                            bit of background in neuroscience and in data science, analyzing EEG data 
+                            is not an easy task.
+                        </p>
+                        <p class="project__desc__full">
+                            For our project, my group of 5 decided to use a dataset from a study 
+                            that was made available online. The study was interested in using music 
+                            to change participants' affects, and using their EEG data to reverse-engineer 
+                            this into an algorithm that could read people's affects from their EEG 
+                            readings. We used some of their data for a different purpose - we wanted to 
+                            see if we could find correlations between the features of the music being 
+                            played to participants and artifacts in their EEG readings.
+                        </p>
+                        <p class="project__desc__full">
+                            This project was challenging for many reasons. For starters, we had trouble 
+                            downloading the data onto a platform we could all access and work with 
+                            simultaneously. After dealing with that, the data we wanted to work with was 
+                            nested and stored across several tables. Linking the EEG readings to the 
+                            corresponding song being played was also a challenge. Once we finally got 
+                            through all of that, we had to deal with the largest challenge of them all - 
+                            how do you extract meaning from EEG data?
+                        </p>
+                        <p class="project__desc__full">
+                            Luckily, we had a tenured professor of Cognitive Science there to help us, 
+                            Prof. Bradley Voytek. He gave us tips on using MNE, a Python package designed 
+                            specifically for this purpose, as well as other tools he designed himself in 
+                            his lab. At the end of the course, we did not find any statistically relevant 
+                            results but learned a lot from trying to.
+                        </p>
+                    </div>
+                    <button onclick="readMore(this)">Read more</button>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <p>Designed and implemented by Felipe Lorenzi.</p>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+</html>

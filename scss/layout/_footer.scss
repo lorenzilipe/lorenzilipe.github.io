@@ -1,0 +1,14 @@
+footer {
+    display: flex;
+    bottom: 0;
+    margin-top: 5em;
+    height: 3em;
+    width: 100%;
+    background-color: $footer-color;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        color: $footer-text;
+    }
+}

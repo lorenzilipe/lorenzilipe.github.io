@@ -1,0 +1,37 @@
+@use '../abstracts/variables';
+
+.minimized {
+    mask-image: linear-gradient(to bottom, white 30%, transparent 100%);
+    overflow-y: hidden;
+    max-height: 10em;
+    transition: 2s ease;
+}
+
+.maximized {
+    max-height: 100em;
+    transition: 3s ease;
+}
+
+.project {
+
+    margin-bottom: 5em;
+
+    &__desc {
+        
+        &__full {
+            text-indent: 2em;
+        }
+    }
+
+    button {
+        margin-top: 1em;
+        font-family: $font-family;
+        font-size: 0.8em;
+        font-weight: 300;
+        color: black;
+        border: 1px darkgrey;
+        border-style: none none none solid;
+        background-color: white;
+        cursor: pointer;
+    }
+}

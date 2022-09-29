@@ -1,0 +1,23 @@
+@import 'abstracts/variables';
+@import 'core/typography';
+@import 'pages/home';
+@import 'pages/projects';
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/footer';
+@import 'layout/article';
+@import 'components/ext_link';
+
+body {
+    margin: 0;
+}
+
+.main {
+    width: $main-width;
+    max-width: $main-max-width;
+    display: block;
+    min-height: 100vh;
+    position: relative;
+    margin: auto;
+    margin-top: 0;
+}
